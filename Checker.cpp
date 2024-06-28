@@ -7,7 +7,7 @@ bool batteryIsOk(float temperature, float soc, float chargeRate) {
     cout << "Temperature out of range!\n";
     return false;
   } 
-  if(soc < 20 || soc > 80) {
+  else (soc < 20 || soc > 80) {
     cout << "State of Charge out of range!\n";
     return false;
   } 
