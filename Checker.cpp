@@ -3,7 +3,7 @@
 using namespace std;
 
 bool checkInRange(int value, const char* comment) {
-  if (a==1) {
+  if (value==1) {
     cout << comment << endl;
     return false;
   }
