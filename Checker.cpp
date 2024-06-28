@@ -1,7 +1,8 @@
 #include <assert.h>
 #include <iostream>
 using namespace std;
- 
+
+bool Rangechecker(float battery_value, float min_value, float max_value, const char* comment);
 bool batteryIsOk(float temperature_value, float soc_value, float chargeRate_value) {
   bool temperature_ok = Rangechecker(temperature_value, 0, 45, "Temperature out of range!");
   bool soc_ok = Rangechecker(soc_value, 20, 80, "State of Charge out of range!");
